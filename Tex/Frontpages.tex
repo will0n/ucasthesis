@@ -50,6 +50,10 @@
 %-
 \chapter{Abstract}
 
+%->Exclude Chinese and English abstracts in table of contents
+%\setcounter{oldtocdepth}{\value{tocdepth}}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-10}}
+
 This paper is a help documentation for the \LaTeX{} class ucasthesis, which is  a thesis template for the University of Chinese Academy of Sciences. The main content is about how to use the ucasthesis, as well as how to write thesis efficiently by using \LaTeX{}.
 
 \englishkeywords{University of Chinese Academy of Sciences (UCAS), Thesis, \LaTeX{} Template}
